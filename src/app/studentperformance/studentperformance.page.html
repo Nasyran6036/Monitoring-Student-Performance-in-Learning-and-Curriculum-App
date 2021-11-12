@@ -1,0 +1,776 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Student Result</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+
+  <h3><b>Student Info</b></h3>
+
+  <ion-card class = "info">
+  <p><b>Student ID   : </b>{{user.studentid}}</p>
+  <p><b>Student Name : </b>{{user.studentName}}</p>
+  <p><b>Student Class: </b>{{user.class}}</p>
+  <p><b>Student Email: </b>{{user.email}}</p>
+</ion-card>
+
+  <h3><b>Exam Result</b></h3>
+  <p class="left">slide left/right</p>
+  <ion-slides [options]="option" class="ion-margin-top">
+    
+    
+    <ion-slide >
+      <ion-card class="slide1">
+        <h4><b>Total Exam</b></h4>
+
+        <ion-grid >
+          <ion-row>
+            <ion-col size="4">
+              <b>Subject Taken</b>
+            </ion-col>
+            <ion-col class="first">
+              <b>First Exam</b>
+            </ion-col>
+            <ion-col class="mid">
+              <b>Mid Exam</b>
+            </ion-col>
+            <ion-col class="final">
+              <b>Final Exam</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row >
+            <ion-col size="4" >
+              Bahasa Melayu
+            </ion-col>
+            <ion-col class="first">
+              <b>{{posts.BM1}}</b>
+            </ion-col>
+            <ion-col class="mid">
+              <b>{{posts.BM2}}</b>
+            </ion-col>
+            <ion-col class="final">
+              <b>{{posts.BM3}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row >
+            <ion-col size="4">
+              Bahasa Inggris
+            </ion-col>
+            <ion-col class="first">
+              <b>{{posts.BI1}}</b>
+            </ion-col>
+            <ion-col class="mid">
+              <b>{{posts.BI2}}</b>
+            </ion-col>
+            <ion-col class="final">
+              <b>{{posts.BI3}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row >
+            <ion-col size="4">
+              Mathematic
+            </ion-col>
+            <ion-col class="first">
+              <b>{{posts.MT1}}</b>
+            </ion-col>
+            <ion-col class="mid">
+              <b>{{posts.MT2}}</b>
+            </ion-col>
+            <ion-col class="final">
+              <b>{{posts.MT3}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col size="4">
+              Sejarah
+            </ion-col>
+            <ion-col class="first">
+              <b>{{posts.SJH1}}</b>
+            </ion-col>
+            <ion-col class="mid">
+              <b>{{posts.SJH2}}</b>
+            </ion-col>
+            <ion-col class="final">
+              <b>{{posts.SJH3}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col size="4">
+              Pendidikan Islam
+            </ion-col>
+            <ion-col class="first">
+              <b>{{posts.PI1}}</b>
+            </ion-col>
+            <ion-col class="mid">
+              <b>{{posts.PI2}}</b>
+            </ion-col>
+            <ion-col class="final">
+              <b>{{posts.PI3}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col size="4">
+              Additional Math
+            </ion-col>
+            <ion-col class="first">
+              <b>{{posts.AM1}}</b>
+            </ion-col>
+            <ion-col class="mid">
+              <b>{{posts.AM2}}</b>
+            </ion-col>
+            <ion-col class="final">
+              <b>{{posts.AM3}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col size="4">
+              Physic
+            </ion-col>
+            <ion-col class="first">
+              <b>{{posts.FZ1}}</b>
+            </ion-col>
+            <ion-col class="mid">
+              <b>{{posts.FZ2}}</b>
+            </ion-col>
+            <ion-col class="final">
+              <b>{{posts.FZ3}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row >
+            <ion-col size="4">
+              Chemistry
+            </ion-col>
+            <ion-col class="first">
+              <b>{{posts.KM1}}</b>
+            </ion-col>
+            <ion-col class="mid">
+              <b>{{posts.KM2}}</b>
+            </ion-col>
+            <ion-col class="final">
+              <b>{{posts.KM3}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col size="4">
+              Biology
+            </ion-col>
+            <ion-col class="first">
+              <b>{{posts.BIO1}}</b>
+            </ion-col>
+            <ion-col class="mid">
+              <b>{{posts.BIO2}}</b>
+            </ion-col>
+            <ion-col class="final">
+              <b>{{posts.BIO3}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col size="4">
+              Account
+            </ion-col>
+            <ion-col class="first">
+              <b>{{posts.AC1}}</b>
+            </ion-col>
+            <ion-col class="mid">
+              <b>{{posts.AC2}}</b>
+            </ion-col>
+            <ion-col class="final">
+              <b>{{posts.AC3}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col size="4">
+              Business
+            </ion-col>
+            <ion-col class="first">
+              <b>{{posts.BS1}}</b>
+            </ion-col>
+            <ion-col class="mid">
+              <b>{{posts.BS2}}</b>
+            </ion-col>
+            <ion-col class="final">
+              <b>{{posts.BS3}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col size="4">
+              Seni Visual
+            </ion-col>
+            <ion-col class="first">
+              <b>{{posts.SV1}}</b>
+            </ion-col>
+            <ion-col class="mid">
+              <b>{{posts.SV2}}</b>
+            </ion-col>
+            <ion-col class="final">
+              <b>{{posts.SV3}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col size="4">
+              Geography
+            </ion-col>
+            <ion-col class="first">
+              <b>{{posts.GEO1}}</b>
+            </ion-col>
+            <ion-col class="mid">
+              <b>{{posts.GEO2}}</b>
+            </ion-col>
+            <ion-col class="final">
+              <b>{{posts.GEO3}}</b>
+            </ion-col>
+          </ion-row>
+
+          </ion-grid>
+
+          
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide >
+      <ion-card class="slide2">
+        <h4><b>First Exam</b></h4> 
+        <ion-grid >
+          <ion-row>
+            <ion-col>
+              <b>Subject Taken</b>
+            </ion-col>
+            <ion-col class="first">
+              <b>First Exam</b>
+            </ion-col>     
+          </ion-row>
+
+          <ion-row >
+            <ion-col  >
+              Bahasa Melayu
+            </ion-col>
+            <ion-col class="first">
+              <b>{{posts.BM1}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row >
+            <ion-col>
+              Bahasa Inggris
+            </ion-col>
+            <ion-col class="first">
+              <b>{{posts.BI1}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row >
+            <ion-col >
+              Mathematics
+            </ion-col>
+            <ion-col class="first">
+              <b>{{posts.MT1}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              Sejarah
+            </ion-col>
+            <ion-col class="first">
+              <b>{{posts.SJH1}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col >
+              Pendidikan Islam
+            </ion-col>
+            <ion-col class="first">
+              <b>{{posts.PI1}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              Additional Math
+            </ion-col>
+            <ion-col class="first">
+              <b>{{posts.AM1}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              Physic
+            </ion-col>
+            <ion-col class="first">
+              <b>{{posts.FZ1}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row >
+            <ion-col>
+              Chemistry
+            </ion-col>
+            <ion-col class="first">
+              <b>{{posts.KM1}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              Biology
+            </ion-col>
+            <ion-col class="first">
+              <b>{{posts.BIO1}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              Account
+            </ion-col>
+            <ion-col class="first">
+              <b>{{posts.AC1}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              Business
+            </ion-col>
+            <ion-col class="first">
+              <b>{{posts.BS1}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              Seni Visual
+            </ion-col>
+            <ion-col class="first">
+              <b>{{posts.SV1}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              Geography
+            </ion-col>
+            <ion-col class="first">
+              <b>{{posts.GEO1}}</b>
+            </ion-col>
+          </ion-row>
+
+          </ion-grid>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide >
+      <ion-card class="slide3">
+        <h4><b>Middle Exam</b></h4> 
+        <ion-grid >
+          <ion-row>
+            <ion-col>
+              <b>Subject Taken</b>
+            </ion-col>
+            <ion-col class="mid">
+              <b>Mid Exam</b>
+            </ion-col>     
+          </ion-row>
+
+          <ion-row >
+            <ion-col  >
+              Bahasa Melayu
+            </ion-col>
+            <ion-col class="mid">
+              <b>{{posts.BM2}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row >
+            <ion-col>
+              Bahasa Inggris
+            </ion-col>
+            <ion-col class="mid">
+              <b>{{posts.BI2}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row >
+            <ion-col >
+              Mathematics
+            </ion-col>
+            <ion-col class="mid">
+              <b>{{posts.MT2}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              Sejarah
+            </ion-col>
+            <ion-col class="mid">
+              <b>{{posts.SJH2}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col >
+              Pendidikan Islam
+            </ion-col>
+            <ion-col class="mid">
+              <b>{{posts.PI2}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              Additional Math
+            </ion-col>
+            <ion-col class="mid">
+              <b>{{posts.AM2}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              Physic
+            </ion-col>
+            <ion-col class="mid">
+              <b>{{posts.FZ2}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row >
+            <ion-col>
+              Chemistry
+            </ion-col>
+            <ion-col class="mid">
+              <b>{{posts.KM2}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              Biology
+            </ion-col>
+            <ion-col class="mid">
+              <b>{{posts.BIO2}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              Account
+            </ion-col>
+            <ion-col class="mid">
+              <b>{{posts.AC2}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              Business
+            </ion-col>
+            <ion-col class="mid">
+              <b>{{posts.BS2}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              Seni Visual
+            </ion-col>
+            <ion-col class="mid">
+              <b>{{posts.SV2}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              Geography
+            </ion-col>
+            <ion-col class="mid">
+              <b>{{posts.GEO2}}</b>
+            </ion-col>
+          </ion-row>
+
+          </ion-grid>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide >
+      <ion-card class="slide4">
+        <h4><b>Final Exam</b></h4> 
+        <ion-grid >
+          <ion-row>
+            <ion-col>
+              <b>Subject Taken</b>
+            </ion-col>
+            <ion-col class="final">
+              <b>Final Exam</b>
+            </ion-col>     
+          </ion-row>
+
+          <ion-row >
+            <ion-col  >
+              Bahasa Melayu
+            </ion-col>
+            <ion-col class="final">
+              <b>{{posts.BM3}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row >
+            <ion-col>
+              Bahasa Inggris
+            </ion-col>
+            <ion-col class="final">
+              <b>{{posts.BI3}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row >
+            <ion-col >
+              Mathematics
+            </ion-col>
+            <ion-col class="final">
+              <b>{{posts.MT3}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              Sejarah
+            </ion-col>
+            <ion-col class="final">
+              <b>{{posts.SJH3}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col >
+              Pendidikan Islam
+            </ion-col>
+            <ion-col class="final">
+              <b>{{posts.PI3}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              Additional Math
+            </ion-col>
+            <ion-col class="final">
+              <b>{{posts.AM3}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              Physic
+            </ion-col>
+            <ion-col class="final">
+              <b>{{posts.FZ3}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row >
+            <ion-col>
+              Chemistry
+            </ion-col>
+            <ion-col class="final">
+              <b>{{posts.KM3}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              Biology
+            </ion-col>
+            <ion-col class="final">
+              <b>{{posts.BIO3}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              Account
+            </ion-col>
+            <ion-col class="final">
+              <b>{{posts.AC3}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              Business
+            </ion-col>
+            <ion-col class="final">
+              <b>{{posts.BS3}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              Seni Visual
+            </ion-col>
+            <ion-col class="final">
+              <b>{{posts.SV3}}</b>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              Geography
+            </ion-col>
+            <ion-col class="final">
+              <b>{{posts.GEO3}}</b>
+            </ion-col>
+          </ion-row>
+
+          </ion-grid>
+      </ion-card>
+    </ion-slide>
+
+  </ion-slides>
+ 
+  <h3><b>Curriculum</b></h3>
+    <ion-card class="slide5">
+      <h4><b>Kelab Sukan</b></h4> 
+      <ion-grid >
+        <ion-row>
+          <ion-col size="9">
+            Kelab Sukan
+          </ion-col>
+          <ion-col size="3">
+            {{posts.kelabsukan}}
+          </ion-col>     
+        </ion-row>
+
+        <ion-row >
+          <ion-col size="9" >
+            Jawatan Kelab Sukan
+          </ion-col>
+          <ion-col  size="3">
+            {{posts.jawatankelabsukan}}
+          </ion-col>
+        </ion-row>
+
+        <ion-row >
+          <ion-col size="9">
+            Kehadiran Kelab Sukan
+          </ion-col>
+          <ion-col size="3">
+            {{posts.kehadirankelabsukan}} / 12
+          </ion-col>
+        </ion-row>
+
+        <ion-row >
+          <ion-col size="9">
+            Skor Kelab Sukan
+          </ion-col>
+          <ion-col size="3">
+            {{posts.skorkelabsukan}} %
+          </ion-col>
+        </ion-row>
+        </ion-grid>
+
+        <h4><b>Kelab Persatuan</b></h4> 
+      <ion-grid >
+        <ion-row>
+          <ion-col size="9">
+            Kelab Persatuan
+          </ion-col>
+          <ion-col size="3">
+            {{posts.kelabpersatuan}}
+          </ion-col>     
+        </ion-row>
+
+        <ion-row >
+          <ion-col size="9" >
+            Jawatan Kelab Persatuan
+          </ion-col>
+          <ion-col size="3">
+            {{posts.jawatankelabpersatuan}}
+          </ion-col>
+        </ion-row>
+
+        <ion-row >
+          <ion-col size="9">
+            Kehadiran Kelab Persatuan
+          </ion-col>
+          <ion-col size="3">
+            {{posts.kehadirankelabpersatuan}} / 12
+          </ion-col>
+        </ion-row>
+
+        <ion-row >
+          <ion-col size="9">
+            Skor Kelab Persatuan
+          </ion-col>
+          <ion-col size="3">
+            {{posts.skorkelabpersatuan}} %
+          </ion-col>
+        </ion-row>
+
+
+        </ion-grid>
+
+        <h4><b>Badan Uniform</b></h4> 
+      <ion-grid >
+        <ion-row>
+          <ion-col size="9">
+            Kelab Badan Uniform
+          </ion-col>
+          <ion-col size="3">
+            {{posts.kelabuniform}}
+          </ion-col>     
+        </ion-row>
+
+        <ion-row >
+          <ion-col size="9" >
+            Jawatan Kelab Uniform
+          </ion-col>
+          <ion-col size="3">
+            {{posts.jawatankelabuniform}}
+          </ion-col>
+        </ion-row>
+
+        <ion-row >
+          <ion-col size="9">
+            Kehadiran Kelab Uniform
+          </ion-col>
+          <ion-col size="3">
+            {{posts.kehadirankelabuniform}} / 12
+          </ion-col>
+        </ion-row>
+
+        <ion-row >
+          <ion-col size="9">
+            Skor Kelab Uniform
+          </ion-col>
+          <ion-col size="3">
+            {{posts.skorkelabuniform}} %
+          </ion-col>
+        </ion-row>
+
+
+        </ion-grid>
+    </ion-card>
+  
+  
+</ion-content>

@@ -1,0 +1,43 @@
+ion-toolbar{
+    --background: #3c84fc;
+  }
+
+  ion-title{
+    margin-right: 50px;
+      color: #fff;
+      font-family:'Arial';
+    }
+  
+ion-content {
+    --background: #1b0158;
+
+    h3{
+        text-align: center;
+        color:#fff;
+    }
+
+    .list3{
+        border-radius:15px;
+        --padding-start:33px;
+        --background:#3c84fc;
+        margin-bottom:10px;
+       // margin-left: 10px;
+       // margin-right: 10px;
+        background:#d69265;
+        --color: #20193b; 
+
+        .placeholder{
+           
+            --placeholder-color:#ffffff;
+            --color:rgb(255, 255, 255);
+            
+        }
+        
+    
+    }
+
+    .submit{
+        margin-top: 25px;
+    }
+}
+

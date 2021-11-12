@@ -1,0 +1,23 @@
+ <ion-content>
+
+  <div class="header">
+    <h1>Please Register<br>To Continue</h1>
+  </div>
+
+  <ion-card>
+    <h2>Teacher</h2>
+<div class="form">
+  <ion-input type ="id" placeholder="ID" [(ngModel)]="user.teacherid"></ion-input> 
+  <ion-input type ="email" placeholder="Email"  [(ngModel)]="user.email"></ion-input> 
+  <ion-input type ="password" placeholder="Password" [(ngModel)]="user.password"></ion-input> 
+  <ion-input type ="text" placeholder="Name" [(ngModel)]="user.teacherName"></ion-input> 
+  <ion-input type ="text" placeholder="Class" [(ngModel)]="user.class"></ion-input> 
+</div>
+<ion-button fill="solid" expand="block" color="tertiary" (click)="register(user)">SUBMIT</ion-button>
+</ion-card>
+
+
+  <div class="footer">
+    <h3 ><span><ion-text routerLink="/login">Login</ion-text></span></h3>
+    </div>
+ </ion-content>

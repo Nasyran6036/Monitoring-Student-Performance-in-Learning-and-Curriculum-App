@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Final Exam</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+
+  <div class="ion-padding">
+    
+    <ion-button color="primary" routerLink="/pinsert">
+      First Exam
+    </ion-button>
+  
+    <ion-button color="danger" routerLink="/pinsert2">
+      Mid Exam
+    </ion-button>
+  
+    <ion-button color="warning" routerLink="/pinsert3" class="lastbutton">
+      Final Exam
+    </ion-button>
+
+    <h3>PERNIAGAAN</h3>
+
+    <ion-item class="list3">
+      <ion-label  position="floating" class="list4">ID</ion-label>
+      <ion-input class="placeholder" type="text" [(ngModel)]="post.studentid" required></ion-input>
+    </ion-item>
+
+    <ion-item class="list3">
+      <ion-label  position="floating" class="list4">Bahasa Melayu</ion-label>
+      <ion-input class="placeholder" type="int" placeholder="0 - 100" [(ngModel)]="post.BM3" required></ion-input>
+    </ion-item>
+   
+    <ion-item class="list3">
+      <ion-label  position="floating" class="list4">English</ion-label>
+      <ion-input class="placeholder" type="int" placeholder="0 - 100" [(ngModel)]="post.BI3" required></ion-input>
+    </ion-item>
+
+    <ion-item class="list3">
+      <ion-label  position="floating" class="list4">Mathematics</ion-label>
+      <ion-input class="placeholder" type="int" placeholder="0 - 100" [(ngModel)]="post.MT3" required></ion-input>
+    </ion-item>
+
+    <ion-item class="list3">
+      <ion-label position="floating" class="list4">Sejarah</ion-label>
+      <ion-input class="placeholder" type="int" placeholder="0 - 100" [(ngModel)]="post.SJH3" required></ion-input>
+    </ion-item>
+
+    <ion-item class="list3">
+      <ion-label  position="floating" class="list4">Pendidikan Islam</ion-label>
+      <ion-input class="placeholder" type="int" placeholder="0 - 100" [(ngModel)]="post.PI3" required></ion-input>
+    </ion-item>
+
+
+    <ion-item class="list3">
+      <ion-label  position="floating" class="list4">Seni</ion-label>
+      <ion-input class="placeholder" type="int" placeholder="0 - 100" [(ngModel)]="post.SENI3" required></ion-input>
+    </ion-item>
+
+    <ion-item class="list3">
+      <ion-label position="floating" class="list4">Perniagaan</ion-label>
+      <ion-input class="placeholder" type="int" placeholder="0 - 100" [(ngModel)]="post.PER3" required></ion-input>
+    </ion-item>
+
+    <ion-button class="submit" expand="block" color="warning" (click)="createPost(post)">
+      <ion-icon slot="start" name="send"></ion-icon>
+      Send
+    </ion-button>
+   </div>
+</ion-content>

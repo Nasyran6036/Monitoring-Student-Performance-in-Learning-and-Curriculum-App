@@ -1,0 +1,106 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">EDIT</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+
+  <h3>First Exam</h3>
+  <h3>{{user.studentName}}</h3>
+
+  <div class="ion-padding">
+    
+
+    <ion-item class="list3">
+      <ion-label color="light" position="floating" class="list4" >ID</ion-label>
+      <ion-input class="placeholder" type="text" [(ngModel)]="user.studentid" required></ion-input>
+    </ion-item>
+
+
+    <h3>Compulsory Subjects</h3>
+   
+    <p class="text1">*must fill in each subject mark below </p>
+   
+
+    <ion-item class="list3">
+      <ion-label color="light" position="floating" class="list4">Bahasa Melayu</ion-label>
+      <ion-input class="placeholder" type="int" placeholder="0 - 100" [(ngModel)]="posts.BM1" required></ion-input>
+    </ion-item>
+   
+    <ion-item class="list3">
+      <ion-label color="light" position="floating" class="list4">English</ion-label>
+      <ion-input class="placeholder" type="int" placeholder="0 - 100" [(ngModel)]="posts.BI1" required></ion-input>
+    </ion-item>
+
+    <ion-item class="list3">
+      <ion-label color="light" position="floating" class="list4">Mathematics</ion-label>
+      <ion-input class="placeholder" type="int" placeholder="0 - 100" [(ngModel)]="posts.MT1" required></ion-input>
+    </ion-item>
+
+    <ion-item class="list3">
+      <ion-label color="light" position="floating" class="list4">Sejarah</ion-label>
+      <ion-input class="placeholder" type="int" placeholder="0 - 100" [(ngModel)]="posts.SJH1" required></ion-input>
+    </ion-item>
+
+    <ion-item class="list3">
+      <ion-label color="light" position="floating" class="list4">Pendidikan Islam</ion-label>
+      <ion-input class="placeholder" type="int" placeholder="0 - 100" [(ngModel)]="posts.PI1" required></ion-input>
+    </ion-item>
+
+    <h3>Elective Subjects</h3>
+
+    <p class="text2">*fill in the marks of the selected subject only</p>
+    <p class="text2">*select a predefined subject in each class</p>
+    <p class="text2">*reminder, each class has a different subject</p>
+
+    <ion-item class="list3">
+      <ion-label color="light" position="floating" class="list4">Additional Mathematics</ion-label>
+      <ion-input class="placeholder" type="int" placeholder="0 - 100" [(ngModel)]="posts.AM1" required></ion-input>
+    </ion-item>
+
+    <ion-item class="list3">
+      <ion-label color="light" position="floating" class="list4">Physics</ion-label>
+      <ion-input class="placeholder" type="int" placeholder="0 - 100" [(ngModel)]="posts.FZ1" required></ion-input>
+    </ion-item>
+
+    <ion-item class="list3">
+      <ion-label color="light" position="floating" class="list4">Chemistry</ion-label>
+      <ion-input class="placeholder" type="int" placeholder="0 - 100" [(ngModel)]="posts.KM1" required></ion-input>
+    </ion-item>
+
+    <ion-item class="list3">
+      <ion-label color="light" position="floating" class="list4">Biology</ion-label>
+      <ion-input class="placeholder" type="int" placeholder="0 - 100" [(ngModel)]="posts.BIO1" required></ion-input>
+    </ion-item>
+
+    <ion-item class="list3">
+      <ion-label color="light" position="floating" class="list4">Principles of Accounting</ion-label>
+      <ion-input class="placeholder" type="int" placeholder="0 - 100" [(ngModel)]="posts.AC1" required></ion-input>
+    </ion-item>
+
+    <ion-item class="list3">
+      <ion-label color="light" position="floating" class="list4">Business</ion-label>
+      <ion-input class="placeholder" type="int" placeholder="0 - 100" [(ngModel)]="posts.BS1" required></ion-input>
+    </ion-item>
+
+    <ion-item class="list3">
+      <ion-label color="light" position="floating" class="list4">Pendidikan Seni Visual</ion-label>
+      <ion-input class="placeholder" type="int" placeholder="0 - 100" [(ngModel)]="posts.SV1" required></ion-input>
+    </ion-item>
+
+    <ion-item class="list3">
+      <ion-label color="light" position="floating" class="list4">Geography</ion-label>
+      <ion-input class="placeholder" type="int" placeholder="0 - 100" [(ngModel)]="posts.GEO1" required></ion-input>
+    </ion-item>
+
+
+    <ion-button class="submit" expand="block" color="primary" (click)="createPost(posts)">
+      <ion-icon slot="start" name="send"></ion-icon>
+      Send
+    </ion-button>
+   </div>
+</ion-content>

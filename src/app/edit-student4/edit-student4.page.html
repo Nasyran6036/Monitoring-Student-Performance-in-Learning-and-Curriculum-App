@@ -1,0 +1,104 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Curriculum</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+
+  <h3>Curriculum</h3>
+
+
+  <div class="ion-padding" >
+
+
+    <ion-item class="list3">
+      <ion-label position="floating" class="list4">ID</ion-label>
+      <ion-input class="placeholder" type="text" [(ngModel)]="user.studentid" required></ion-input>
+    </ion-item>
+    
+    <h3>Sukan Permainan</h3>
+    <p class="text1">*must fill in each data below</p>
+    
+    <ion-item class="list3">
+      <ion-label position="floating" class="list4">Sukan Permainan</ion-label>
+      <ion-input class="placeholder" type="text" placeholder="0 - 100" [(ngModel)]="posts.kelabsukan" required></ion-input>
+    </ion-item>
+   
+    <ion-item class="list3">
+      <ion-label position="floating" class="list4">Jawatan</ion-label>
+      <ion-input class="placeholder" type="text" placeholder="0 - 100" [(ngModel)]="posts.jawatankelabsukan" required></ion-input>
+    </ion-item>
+
+    <ion-item class="list3">
+      <ion-label position="floating" class="list4">Kehadiran ?/12</ion-label>
+      <ion-input class="placeholder" type="int" placeholder="0 - 100" [(ngModel)]="posts.kehadirankelabsukan" required></ion-input>
+    </ion-item>
+
+    <ion-item class="list3">
+      <ion-label position="floating" class="list4">Jumlah Skor (0% - 100%)</ion-label>
+      <ion-input class="placeholder" type="int" placeholder="0 - 100" [(ngModel)]="posts.skorkelabsukan" required></ion-input>
+    </ion-item>
+
+    <h3>Kelab Persatuan</h3>
+    <p class="text1">*must fill in each data below</p>
+
+    <ion-item class="list3">
+      <ion-label position="floating" class="list4">Kelab Persatuan</ion-label>
+      <ion-input class="placeholder" type="text" placeholder="0 - 100" [(ngModel)]="posts.kelabpersatuan" required></ion-input>
+    </ion-item>
+   
+    <ion-item class="list3">
+      <ion-label position="floating" class="list4">Jawatan</ion-label>
+      <ion-input class="placeholder" type="text" placeholder="0 - 100" [(ngModel)]="posts.jawatankelabpersatuan" required></ion-input>
+    </ion-item>
+
+    <ion-item class="list3">
+      <ion-label position="floating" class="list4">Kehadiran ?/12</ion-label>
+      <ion-input class="placeholder" type="int" placeholder="0 - 100" [(ngModel)]="posts.kehadirankelabpersatuan" required></ion-input>
+    </ion-item>
+
+    <ion-item class="list3">
+      <ion-label position="floating" class="list4">Jumlah Skor (0% - 100%)</ion-label>
+      <ion-input class="placeholder" type="int" placeholder="0 - 100" [(ngModel)]="posts.skorkelabpersatuan" required></ion-input>
+    </ion-item>
+
+    <h3>Badan Beruniform</h3>
+    <p class="text1">*must fill in each data below</p>
+
+    <ion-item class="list3">
+      <ion-label position="floating" class="list4">Badan Beruniform</ion-label>
+      <ion-input class="placeholder" type="text" placeholder="0 - 100" [(ngModel)]="posts.kelabuniform" required></ion-input>
+    </ion-item>
+   
+    <ion-item class="list3">
+      <ion-label position="floating" class="list4">Jawatan</ion-label>
+      <ion-input class="placeholder" type="text" placeholder="0 - 100" [(ngModel)]="posts.jawatankelabuniform" required></ion-input>
+    </ion-item>
+
+    <ion-item class="list3">
+      <ion-label position="floating" class="list4">Kehadiran ?/12</ion-label>
+      <ion-input class="placeholder" type="int" placeholder="0 - 100" [(ngModel)]="posts.kehadirankelabuniform" required></ion-input>
+    </ion-item>
+
+    <ion-item class="list3">
+      <ion-label position="floating" class="list4">Jumlah Skor (0% - 100%)</ion-label>
+      <ion-input class="placeholder" type="int" placeholder="0 - 100" [(ngModel)]="posts.skorkelabuniform" required></ion-input>
+    </ion-item>
+
+
+    
+
+    
+
+    
+
+    <ion-button class="submit" expand="block" (click)="createPost(post)">
+      <ion-icon slot="start" name="send"></ion-icon>
+      Send
+    </ion-button>
+   </div>
+</ion-content>

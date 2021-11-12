@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Homepage</ion-title>
+
+    <ion-item class="test">
+      <ion-alert-controller></ion-alert-controller>
+      <ion-icon color="light" name="log-in-outline" slot="end" (click)="CreatePrompt()"></ion-icon>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+
+    <ion-card class="profile">
+      
+      <h4><b>STUDENT</b></h4>
+      <h5>{{user.studentName}}</h5>
+      
+    </ion-card>
+
+  <ion-slides [options]="option" class="ion-margin-top">
+    
+    
+    <ion-slide >
+      <ion-card class="slide1">
+        <img src="assets/add.png"  class="img1"/>
+        <h4>See Your Own Result</h4>
+        <ion-button routerLink="/courseseletion">CHECK PERFORMANCE</ion-button>
+      </ion-card>
+    </ion-slide>
+
+
+  </ion-slides>
+
+
+  <ion-card class="info">
+    <h4>Teacher Monitor : {{user.teacherName}}</h4>
+    <h4>Student ID : {{user.studentid}}</h4>
+    <h4>Full Name : {{user.studentName}}</h4>
+  </ion-card>
+
+  <ion-tabs class="tabs">
+    <ion-tab-bar class="tabtest" slot="bottom">
+      <ion-tab-button [routerLink]="['/courseseletion']" tab="tab1">
+        <ion-icon name="receipt"></ion-icon>
+        <ion-label>Info</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button [routerLink]="['/home']" tab="tab2">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button [routerLink]="['/faq']"tab="tab3">
+        <ion-icon name="help-circle"></ion-icon>
+        <ion-label>FAQ</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button [routerLink]="['/aboutus']"tab="tab3">
+        <ion-icon name="information-circle"></ion-icon>
+        <ion-label>About Us</ion-label>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
+
+</ion-content>

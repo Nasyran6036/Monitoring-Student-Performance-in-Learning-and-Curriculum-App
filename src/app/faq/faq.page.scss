@@ -1,0 +1,174 @@
+ion-content {
+
+    --background: #1b0158;
+    font-family:'Arial';
+  
+  }
+
+  .title{
+    text-align: center;
+    color: #ffffff;
+    font-family:'Arial';      
+}
+
+.faq{
+    width: 92%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+  .tabtest{
+    --background:#311866;
+     --color: #d69265;
+     border-radius: 40px;
+  }
+
+  .test {
+    --background: linear-gradient( 180deg, #BC78EC 100%);
+  }
+  
+  ion-toolbar{
+    --background: #9a4dfd;
+  }
+  
+  ion-title{
+    text-align: center;
+    color: #fbfbfb;
+    font-family:'Arial';
+  }
+  
+  .profile{
+    width: 92%;
+    height: 100px;
+    border-radius: 20px;
+    padding-left: 10px;
+    margin-bottom: -10px;;
+    margin-top: 30px;
+    --background: #9a4dfd;
+  
+    h4{
+        text-align: center;
+        color: #ffffff;
+        font-family:'Arial';      
+    }
+  
+    h5{
+      text-align: center;
+        color: #ffffff;
+        font-family:'Arial';  }
+  }
+  .slide1{
+    --background: #ffffff; 
+    font-family:'Arial';
+  
+    .img1{
+      height : 50px;
+      width : 50px;
+    }
+  
+    ion-button{
+      --background:#d69265;
+    }
+  
+  }
+  
+  .slide2{
+    --background: #ffffff; 
+    font-family:'Arial';
+  
+    .img2{
+      height : 50px;
+      width : 50px;
+      margin-left: 20px;
+    }
+  
+    ion-button{
+      --background:#d69265;
+    }
+  
+  }
+  
+  .slide3{
+    --background: #ffffff; 
+    font-family:'Arial';
+  
+    .img3{
+      height : 50px;
+      width : 50px;
+    }
+  
+    ion-button{
+      --background:#d69265;
+    }
+  
+  }
+  
+  ion-card {
+    width: 100%;
+    padding-left: 0px;
+    height: 160px;
+    box-shadow: none;
+    border-radius: 12px;
+  
+    img {
+        object-fit: cover;
+        width: 100%;
+        transform: scale(1.1, 1.1) rotate(1deg);
+        transition: 600ms all ease-in-out;
+    }
+  
+  }
+  
+  
+  .swiper-slide-active {
+    transform: scale(1.05, 1.05);
+  
+    ion-card {
+        img {
+            transform: scale(1, 1);
+        }
+  
+        
+    }
+  }
+  
+  .swiper-slide {
+    transition: 400ms all ease-in-out;
+  }
+  
+  
+  .info{
+    width: 92%;
+    height: 180px;
+    border-radius: 20px;
+    padding-left: 10px;
+    margin-top: 10px;
+    background: #9a4dfd;
+  
+    h4{
+      color:#e0e3fa;
+      font-family:'Arial';
+    }
+    
+   
+  }
+  
+  .ownclass{
+    background: #5f58ad;
+    width: 90%;
+    height: 100px;
+    padding-left: 20px;
+  
+    h4{
+        color: #e0e3fa;
+        font-family:'Arial';
+    }
+  
+    ion-button{
+        margin-left: 60px;
+    }
+
+    
+    
+    }
+  

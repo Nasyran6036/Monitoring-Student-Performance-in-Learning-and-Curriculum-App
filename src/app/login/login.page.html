@@ -1,0 +1,22 @@
+<ion-content>
+  <div class="header">
+    <h3>Welcome Back</h3>
+    <h1>Please Login<br>To Continue</h1>
+  </div>
+
+  <ion-card>
+    <h2>Teacher</h2>
+<div class="form">
+  <ion-input type ="email" placeholder="Email"  [(ngModel)]="user.email"></ion-input> 
+  <ion-input type ="password" placeholder="Password" [(ngModel)]="user.password"></ion-input> 
+</div>
+<ion-button fill="solid" expand="block" color="tertiary" (click)="login(user)">Login</ion-button>
+</ion-card>
+
+
+<div class="footer">
+  <h3 class="login">Click here to <span><ion-text routerLink="/loginstudent">Login as Student</ion-text></span></h3>
+<h3 >Don't have an account <span><ion-text routerLink="/register">Sign Up</ion-text></span></h3>
+</div>
+
+</ion-content>

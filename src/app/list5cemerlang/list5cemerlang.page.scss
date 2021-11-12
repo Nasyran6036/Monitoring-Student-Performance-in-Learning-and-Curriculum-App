@@ -1,0 +1,45 @@
+ion-toolbar{
+    --background: #9a4dfd;
+  }
+
+  ion-title{
+  margin-right: 50px;
+    color: #fff;
+    font-family:'Arial';
+  }
+
+ion-content {
+    --background: #1b0158;
+
+   
+  
+    .list{
+        background-color: transparent !important;
+    }
+
+ 
+
+    .list3{
+        border-radius:15px;
+        --padding-start:33px;
+        --background:#ffffff;
+        margin-bottom:10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        background:#d69265;
+        --color: #20193b; 
+
+        ion-text{
+            color: #030303; 
+        }
+
+
+        ion-button{
+            --background: #9a4dfd; 
+            --color: #ffffff; 
+        }
+    }
+
+
+}
+  

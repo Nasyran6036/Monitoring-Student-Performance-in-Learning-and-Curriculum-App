@@ -1,0 +1,100 @@
+ion-content {
+
+    --background: #1b0158;
+
+}
+
+ion-toolbar{
+    --background: #e0e3fa;
+}
+
+ion-title{
+    text-align: center;
+}
+
+.profile{
+    width: 92%;
+    height: 100px;
+    border-radius: 20px;
+    padding-left: 10px;
+    margin-bottom: -10px;;
+    margin-top: -2px;
+
+    h4{
+        text-align: center;
+        
+    }
+}
+.slide1{
+    --background: linear-gradient(to right, #b91d73 , #f953c6 ); 
+
+}
+
+.slide2{
+    --background: linear-gradient(200deg, #a5a5a5 1%, #ca63f3 100%); 
+
+}
+
+.slide3{
+    --background: linear-gradient(200deg, #a5a5a5 1%, #be9d42 100%); 
+
+}
+
+ion-card {
+    width: 100%;
+    padding-left: 0px;
+    height: 160px;
+    box-shadow: none;
+    border-radius: 12px;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        transform: scale(1.1, 1.1) rotate(1deg);
+        transition: 600ms all ease-in-out;
+    }
+
+}
+
+
+.swiper-slide-active {
+    transform: scale(1.05, 1.05);
+
+    ion-card {
+        img {
+            transform: scale(1, 1);
+        }
+
+        
+    }
+}
+
+.swiper-slide {
+    transition: 400ms all ease-in-out;
+}
+
+
+.info{
+    width: 92%;
+    height: 210px;
+    border-radius: 20px;
+    padding-left: 10px;
+    margin-top: 10px;
+   
+}
+
+.ownclass{
+    background: #5f58ad;
+    width: 90%;
+    height: 100px;
+    padding-left: 20px;
+
+    h4{
+        color: #e0e3fa;
+    }
+
+    ion-button{
+        margin-left: 60px;
+    }
+    
+    }

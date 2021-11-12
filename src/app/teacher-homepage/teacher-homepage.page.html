@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Homepage</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar
+  [(ngModel)]="searchTerm"
+  (ionChange)="setFilteredItems()"
+  ></ion-searchbar>
+
+
+    <ion-card class="profile">
+      
+      <h4>TEACHER</h4>
+      <h5>AHMAD NASYRAN BIN AMRAN</h5>
+      
+    </ion-card>
+
+  <ion-slides [options]="option" class="ion-margin-top">
+    
+    
+    <ion-slide >
+      <ion-card class="slide1">
+        <h4>Insert Data</h4>
+        <ion-button routerLink="/insert">INSERT</ion-button>
+      </ion-card>
+    </ion-slide>
+    
+    <ion-slide>
+      <ion-card class="slide2">
+        <h4>Edit Data</h4>
+        <ion-button routerLink="/edit">EDIT</ion-button>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card class="slide3">
+        <h4>Search Data</h4>
+        <ion-button routerLink="/list">SEARCH</ion-button>
+      </ion-card>
+    </ion-slide>
+
+  </ion-slides>
+
+  <ion-card class="info">
+    <h4>Class Monitor : 5 Amanah</h4>
+    <h4>Total Student : 45</h4>
+      <ion-card class="ownclass">
+      <h4>Monitor Your Own Class</h4>
+      <ion-button>Search</ion-button>
+    </ion-card>
+  </ion-card>
+
+</ion-content>

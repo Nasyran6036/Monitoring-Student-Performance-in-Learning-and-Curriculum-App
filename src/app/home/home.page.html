@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title><b>Homepage</b></ion-title>
+
+    <ion-item class="test">
+      <ion-alert-controller></ion-alert-controller>
+      <ion-icon color="light" name="log-in-outline" slot="end" (click)="CreatePrompt()"></ion-icon>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+
+    <ion-card class="profile">
+      
+      <h4>TEACHER</h4>
+      <h5>{{user.teacherName}}</h5>
+      
+    </ion-card>
+
+  <ion-slides [options]="option" class="ion-margin-top">
+    
+    
+    <ion-slide >
+      <ion-card class="slide1">
+        <img src="assets/add.png"  class="img1"/>
+        <h4>Insert Data</h4>
+        <ion-button routerLink="/list5cemerlang">INSERT</ion-button>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card class="slide2">
+        <img src="assets/edit.png"  class="img2"/>
+        <h4>Edit Data</h4>
+        <ion-button routerLink="/edit">EDIT</ion-button>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card class="slide3">
+        <img src="assets/search.png"  class="img3"/>
+        <h4>Search Data</h4>
+        <ion-button routerLink="/list">SEARCH</ion-button>
+      </ion-card>
+    </ion-slide>
+
+  </ion-slides>
+
+  <ion-card class="info">
+    <h4>Class Monitor : {{user.class}}</h4>
+    <h4>ID : {{user.teacherid}}</h4>
+    <h4>Full Name : {{user.teacherName}}</h4>
+      
+  </ion-card>
+
+  <ion-tabs class="tabs">
+    <ion-tab-bar class="tabtest" slot="bottom">
+
+      <ion-tab-button [routerLink]="['/home']" tab="tab2">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button [routerLink]="['/faq']"tab="tab3">
+        <ion-icon name="help-circle"></ion-icon>
+        <ion-label>FAQ</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button [routerLink]="['/aboutus']"tab="tab3">
+        <ion-icon name="information-circle"></ion-icon>
+        <ion-label>About Us</ion-label>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
+
+</ion-content>

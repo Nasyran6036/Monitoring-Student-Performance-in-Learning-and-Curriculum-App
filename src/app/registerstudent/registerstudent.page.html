@@ -1,0 +1,67 @@
+<ion-content>
+
+  <div class="header">
+    <h1>Please Register<br>To Continue</h1>
+  </div>
+
+  <ion-card>
+    <div class="form">
+
+      <h2>Student</h2>
+
+    <ion-input type="email" placeholder="Email" [(ngModel)]="user.email" required></ion-input >
+
+
+    <ion-input type="password" placeholder="Password" [(ngModel)]="user.password" required></ion-input >
+
+
+
+    <ion-input type="text" placeholder="ID" [(ngModel)]="user.studentid" required></ion-input >
+
+
+    <ion-input type="text" placeholder="Full Name" [(ngModel)]="user.studentName" required></ion-input >
+
+
+
+
+
+    <ion-select class="custom-options" placeholder="Class Teacher"  [(ngModel)]="user.teacherName"> 
+      <ion-select-option value="Pn Mazlina">Pn Mazlina</ion-select-option>
+      <ion-select-option value="Pn Rosnah">Pn Rosnah</ion-select-option>
+      <ion-select-option value="En Redza">En Redza</ion-select-option>
+      <ion-select-option value="Pn Suzana">Pn Suzana</ion-select-option>
+    </ion-select>
+
+
+
+
+        <ion-select class="custom-options" placeholder="Class"[(ngModel)]="user.class">
+          <ion-select-option value="5 CEMERLANG">5 CEMERLANG</ion-select-option>
+          <ion-select-option value="5 CERDIK">5 CERDIK</ion-select-option>
+          <ion-select-option value="5 CERDAS">5 CERDAS</ion-select-option>
+          <ion-select-option value="5 CEKAP">5 CEKAP</ion-select-option>
+        </ion-select>
+
+
+    </div>
+
+
+ 
+  <ion-button 
+  class="ion-padding" 
+  expand="full" 
+  shape="round" 
+  color="primary" 
+  (click)="register(user)"
+  >
+   SUBMIT
+  </ion-button>
+
+</ion-card>
+
+  <div class="footer">
+    <h3 ><span><ion-text routerLink="/loginstudent">Login</ion-text></span></h3>
+    </div>
+</ion-content>
+
+
